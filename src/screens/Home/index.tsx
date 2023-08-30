@@ -3,6 +3,7 @@ import { View, Image, Text, TextInput, TouchableOpacity } from "react-native";
 import { AntDesign } from '@expo/vector-icons'; 
 
 import { styles } from "./styles";
+import { Task } from "../../components/Task";
 
 export function Home() {
   return (
@@ -25,11 +26,6 @@ export function Home() {
               </Text>
             </View>
         </View>
-      </View>
-      
-      {/* MAIN */}
-
-      <View style={styles.Main}>
         {/* INPUT */}
         <View style={styles.ContainerInput}>
           <TextInput
@@ -40,7 +36,16 @@ export function Home() {
             <AntDesign name="right" size={15} color="#B2B2B2"/>
           </TouchableOpacity>
         </View>
+      </View>
+      
+      {/* MAIN */}
+      <View style={styles.Main}>
         {/* TASKS */}
+        <View style={styles.ContainerTasks}>
+          <Task done={true} text="Arrumar a Casa"/>
+          <Task done={true} text="Arrumar a Casa"/>
+          <Task done={false} text="Arrumar a Casa"/>
+        </View>
       </View>
     </View>
   )

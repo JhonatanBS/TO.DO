@@ -17,9 +17,10 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     flex: 1,
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "flex-end",
     width: "100%",
     height: 100,
+    marginBottom: 10
   },
   ContainerImage: {
     height: 26,
@@ -37,15 +38,14 @@ export const styles = StyleSheet.create({
   },
   Main: {
     flex: 1,
-    paddingLeft: 24,
-    paddingRight: 24,
+    marginTop: 60
   },
   ContainerInput: {
     height: 56,
     width: "100%",
     backgroundColor: "#FFFFFF",
     position: "relative",
-    top: -28,
+    top: 28,
     borderRadius: 5,
     display: "flex",
     flexDirection: "row"
@@ -63,5 +63,8 @@ export const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
+  },
+  ContainerTasks: {
+    flex: 1,
   }
 });
