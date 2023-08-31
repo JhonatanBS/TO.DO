@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#FFFFFF"
   },
   isNotDone: {
     height: 16,
@@ -29,10 +28,15 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
-  TextTask: {
+  TextTaskDone: {
+    color: "#1DB863",
+    fontSize: 14,
+    width: 295,
+    textDecorationLine: "line-through"
+  },
+  TextTaskIsNotDone: {
     color: "#666666",
     fontSize: 14,
     width: 295,
-   
   }
 });

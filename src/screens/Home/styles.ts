@@ -36,10 +36,6 @@ export const styles = StyleSheet.create({
   HighLightBold: {
     fontWeight: "bold"
   },
-  Main: {
-    flex: 1,
-    marginTop: 60
-  },
   ContainerInput: {
     height: 56,
     width: "100%",
@@ -63,6 +59,11 @@ export const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
+  },
+  Main: {
+    flex: 1,
+    marginTop: 60,
+    paddingBottom: 48
   },
   ContainerTasks: {
     flex: 1,
