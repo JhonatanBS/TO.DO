@@ -8,6 +8,8 @@ import { useState } from "react";
 
 import uuid from "react-native-uuid";
 
+import LogoSVG from "../../assets/to.doHome.svg";
+
 export interface ITodo {
   id: string | number[];
   done: boolean,
@@ -81,10 +83,7 @@ export function Home() {
         <View style={styles.Container}>
           <View style={styles.ContainerImage}>
 
-            <Image
-              source={require("../../assets/to.do.png")}
-              style={styles.Logo}
-            />
+            <LogoSVG width={64} height={26}/>
           </View>
 
           <View>
